@@ -2,6 +2,13 @@
 # -*- coding: utf-8 -*-
 """NORVIK SHOP AI OS v3.0 — 企业级跨境电商 AI 运营工具平台"""
 
+import sys
+from pathlib import Path
+# 确保项目根目录在 sys.path 中（Streamlit Cloud 必须）
+_ROOT = str(Path(__file__).resolve().parent)
+if _ROOT not in sys.path:
+    sys.path.insert(0, _ROOT)
+
 import copy
 import time
 
