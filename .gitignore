@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+*.egg
+dist/
+build/
+.eggs/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Project
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
+data/logs/
+data/lexicon_backups/
+*.log
+
+# Secrets
+.env
+.env.*
