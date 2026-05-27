@@ -15,19 +15,19 @@ import time
 import streamlit as st
 
 from config import LEXICON_PATH
-from database.db import init_db, update_online
-from auth.auth import (
+from db import init_db, update_online
+from auth_mod import (
     is_logged_in, get_current_user, get_current_role,
     get_role_name, do_logout, has_permission,
 )
-from utils.lexicon_manager import BUILTIN_LEXICON as _BUILTIN, load_lexicon
+from lexicon_manager import BUILTIN_LEXICON as _BUILTIN, load_lexicon
 
-import pages.page_login as page_login
-import pages.page_seo as page_seo
-import pages.page_roi as page_roi
-import pages.page_keywords as page_keywords
-import pages.page_lexicon as page_lexicon
-import pages.page_admin as page_admin
+import page_login
+import page_seo
+import page_roi
+import page_keywords
+import page_lexicon
+import page_admin
 
 
 # ── 页面配置 ──
